@@ -45,7 +45,7 @@ post '/visit' do
 end
 
 get '/barber/:id' do
-  id = params[:id]
+  @barber = Barber.find(params[:id])
   erb :barber
 end
 
